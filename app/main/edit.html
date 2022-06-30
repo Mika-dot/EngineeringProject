@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/main/styleCard/style.css">
+    <link rel="stylesheet" href="/main/styleCard/styleing.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/main/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/main/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/main/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/main/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/main/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/main/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/main/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/main/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/main/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/main/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/main/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/main/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/main/ico/favicon-16x16.png">
+    <link rel="manifest" href="/main/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <nav>
+        <h1>Изменения</h1>
+        <ul>
+            <li>
+                <a href="#0">Общая информация</a>
+            </li>
+            <li>
+                <a href="#1">Тех. характеристики</a>
+            </li>
+            <li>
+                <a href="#2">Размеры</a>
+            </li>
+            <li>
+                <a href="#3">Материалы изготовления</a>
+            </li>
+            <li>
+                <a href="#4">Электроника</a>
+            </li>
+        </ul>
+        <hr>
+        <button class="fill" id="Conf" type="submit">Подтвердить</button>
+        <button class="fill" id="Back">Назад</button>
+
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <path />
+        </svg>
+    </nav>
+
+    <article id="top">
+
+        <div class="subheading">Все проекты идут под лицензией ГК РФ Статья 1286.1. </div>
+        <form action="" name="SendForm" id="SendForm">
+            <p>Название задвижки трубопроводной арматуры. Должен полно описывать названия изделия</p>
+
+            <input class="form-control" id="NameL" name="NameL" placeholder="Введите значение"></input>
+            <p>Описание самого изделия должно включать исчерпывающию информацию об изделии.</p>
+            <textarea class="form-control" style="width: 498px; height: 175px;" id="Desc" name="Desc"
+                placeholder="Введите значение"></textarea>
+
+            <section id="0">
+                <h2>Общая информация</h2>
+
+                <p>
+                    Задвижка клиновая штампосварная с выдвижным шпинделем стальная с ручным уп-
+                    управлением общепромышленного назначения
+                    предназначена для установки в качестве заопорного устройства на трубопроводах, транс-
+                    портирующих жидкие и газообразные неагагрессивные среды.
+                </p>
+
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Характеристика</th>
+                            <th class="text-left">Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">Код ОКП</td>
+                            <td class="text-left"><input class="form-control" id="OKP" name="OKP"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Производитель</td>
+                            <td class="text-left">
+                                <select id="Manufact" name="Manufact">
+                                    <option disabled value="" selected>Выберите производителя</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Масса</td>
+                            <td class="text-left"><input class="form-control" id="Mass" name="Mass" type="number" min="0"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section id="1">
+                <h2>Технические характеристики</h2>
+
+                <p>В данной таблице представлены основные параметры технических характеристик изделия.</p>
+                <p>Давление описывает давления рабочей стреды.</p>
+                <p>Температура описывает температурные факторы работы краника его приделы и наминальную работу.</p>
+                <p>Класс герметичности используется для условий внешшнех сред.</p>
+                <p>Типы соединений нужны для стыковки с другим оборудованием.</p>
+
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Характеристика</th>
+                            <th class="text-left">Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">Давление</td>
+                            <td class="text-left"><input class="form-control" id="Prss" name="Prss" type="number" min="0"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Минимальная температура</td>
+                            <td class="text-left"><input class="form-control" id="Tmin" name="Tmin" type="number" min="0"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Температура работы</td>
+                            <td class="text-left"><input class="form-control" id="Tnorm" name="Tnorm" type="number" min="0"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Максимальная температура</td>
+                            <td class="text-left"><input class="form-control" id="Tmax" name="Tmax" type="number" min="0"
+                                    placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Класс герметичности</td>
+                            <td class="text-left">
+                                <select id="Germ" name="Germ">
+                                    <option disabled value="" selected>Выберите класс</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Среда работы</td>
+                            <td class="text-left">
+                                <select id="Work" name="Work">
+                                    <option disabled value="" selected>Выберите среду</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Тип соединения</td>
+                            <td class="text-left">
+                                <select id="Conn" name="Conn">
+                                    <option disabled value="" selected>Выберите тип</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </section>
+
+            <section id="2">
+                <h2>Размеры</h2>
+                <p>Габаритные размеры изделия.</p>
+
+                <div class="box">
+                    <div class="size">
+                        <table class="table-fill">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Размер</th>
+                                    <th class="text-left">Значение</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-hover">
+                                <tr>
+                                    <td class="text-left">DN</td>
+                                    <td class="text-left"><input class="form-control" id="DN" name="DN" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">D</td>
+                                    <td class="text-left"><input class="form-control" id="D" name="D" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">D1</td>
+                                    <td class="text-left"><input class="form-control" id="D1" name="D1" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">D2</td>
+                                    <td class="text-left"><input class="form-control" id="D2" name="D2" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">n</td>
+                                    <td class="text-left"><input class="form-control" id="n" name="n" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">d</td>
+                                    <td class="text-left"><input class="form-control" id="d" name="d" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">D0</td>
+                                    <td class="text-left"><input class="form-control" id="D0" name="D0" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">L</td>
+                                    <td class="text-left"><input class="form-control" id="L" name="L" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">H</td>
+                                    <td class="text-left"><input class="form-control" id="H" name="H" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">H1</td>
+                                    <td class="text-left"><input class="form-control" id="H1" name="H1" type="number" min="0"
+                                            placeholder="Введите значение"></input></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="size">
+                        <img src="/main/img/Gab.JPG" alt="Габаритный чертеж">
+                    </div>
+                </div>
+                <p>Все размеры представленны на изображении общего чертижа</p>
+
+
+            </section>
+
+            <section id="3">
+                <h2>Материалы изготовления</h2>
+
+                <P>ГОСТ — это государственный стандарт, который формулирует требования государства к качеству продукции,
+                    работ и услуг, имеющих межотраслевое значение. ГОСТы устанавливаются на основе применения
+                    современных достижений науки, технологий и практического опыта с учетом последних редакций
+                    международных стандартов или их проектов. </P>
+                <p>Производитель - это физическое лицо или зарегистрированная компания, которая производит готовую
+                    продукцию из сырья с целью получения прибыли. Позже товары распределяются между оптовиками и
+                    розничными торговцами, которые затем продают покупателям.</p>
+
+
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Деталь</th>
+                            <th class="text-left">Материал</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">Корпус</td>
+                            <td class="text-left">
+                                <select id="MM1" name="MM1">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Крышка</td>
+                            <td class="text-left">
+                                <select id="MM2" name="MM2">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Сальник</td>
+                            <td class="text-left">
+                                <select id="MM3" name="MM3">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Шпиндель</td>
+                            <td class="text-left">
+                                <select id="MM4" name="MM4">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Затвор</td>
+                            <td class="text-left">
+                                <select id="MM5" name="MM5">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Клин</td>
+                            <td class="text-left">
+                                <select id="MM6" name="MM6">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Набивка</td>
+                            <td class="text-left">
+                                <select id="MM7" name="MM7">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Прокладка</td>
+                            <td class="text-left">
+                                <select id="MM8" name="MM8">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Фланцы</td>
+                            <td class="text-left">
+                                <select id="MM9" name="MM9">
+                                    <option disabled value="null" selected>Выберите материал</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+
+            <section id="4">
+                <h2>Электроника</h2>
+
+                <P>ГОСТ — это государственный стандарт, который формулирует требования государства к качеству продукции,
+                    работ и услуг, имеющих межотраслевое значение. ГОСТы устанавливаются на основе применения
+                    современных достижений науки, технологий и практического опыта с учетом последних редакций
+                    международных стандартов или их проектов. </P>
+                <p>Производитель - это физическое лицо или зарегистрированная компания, которая производит готовую
+                    продукцию из сырья с целью получения прибыли. Позже товары распределяются между оптовиками и
+                    розничными торговцами, которые затем продают покупателям.</p>
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Характеристика</th>
+                            <th class="text-left">Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">Провод</td>
+                            <td class="text-left">
+                                <select id="Provod" name="Provod">
+                                    <option disabled value="" selected>Выберите ГОСТ</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Защита</td>
+                            <td class="text-left">
+                                <select id="Secure" name="Secure">
+                                    <option disabled value="" selected>Выберите ГОСТ</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Сила</td>
+                            <td class="text-left"><input class="form-control" id="Power" name="Power" type="number" min="0"
+                                placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Частота</td>
+                            <td class="text-left"><input class="form-control" id="Frequency" name="Frequency" type="number" min="0"
+                                placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Мин. вольтаж</td>
+                            <td class="text-left"><input class="form-control" id="VoltageMIN" name="VoltageMIN" type="number" min="0"
+                                placeholder="Введите значение"></input></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Макс. вольтаж</td>
+                            <td class="text-left"><input class="form-control" id="VoltageMAX" name="VoltageMAX" type="number" min="0"
+                                placeholder="Введите значение"></input></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </form>
+    </article>
+
+    <script
+        src='https://cdn.rawgit.com/Tam/d44c87b3daeb07b15984ddc6127d4e34/raw/3277237bf9f4f5893d505de796b33ae11271aaec/Swipe.js'></script>
+    <script src="/main/main/scripting.js"></script>
+    <script src="/main/main/script.js"></script>
+    <script>
+        let url = window.location.href;
+        var THISID = url.substring(url.lastIndexOf('/') + 1);
+
+        let r_all = fetch('https://engprj.herokuapp.com/all_data', {
+            method: 'GET'
+        });
+        let rr_all = r_all.then((res) => { console.log(res); return res.json(); });
+        rr_all.then((data_all) => {
+            console.log(data_all);
+            for (let i = 0; i < data_all.germ.length; i++) {
+                document.getElementById("Germ").insertAdjacentHTML('beforeend', `<option value="` + data_all.germ[i].id + `">` + data_all.germ[i].Word + " (ГОСТ: " + data_all.germ[i].GOST_Link.Name + `)</option>`);
+            }
+            for (let i = 0; i < data_all.work.length; i++) {
+                document.getElementById("Work").insertAdjacentHTML('beforeend', `<option value="` + data_all.work[i].id + `">` + data_all.work[i].Name + `</option>`);
+            }
+            for (let i = 0; i < data_all.tube.length; i++) {
+                document.getElementById("Conn").insertAdjacentHTML('beforeend', `<option value="` + data_all.tube[i].id + `">` + data_all.tube[i].Name + " (ГОСТ: " + data_all.tube[i].GOST_Link.Name + `)</option>`);
+            }
+            for (let i = 0; i < data_all.manuf.length; i++) {
+                document.getElementById("Manufact").insertAdjacentHTML('beforeend', `<option value="` + data_all.manuf[i].ID + `">` + data_all.manuf[i].PlantName + " [" + data_all.manuf[i].Index + `]</option>`);
+            }
+            for (let i = 0; i < data_all.mats.length; i++) {
+                for (let j = 1; j < 10; j++) {
+                    document.getElementById("MM" + j).insertAdjacentHTML('beforeend', `<option value="` + data_all.mats[i].id + `">` + data_all.mats[i].Name + " " + data_all.mats[i].ThisMatPercent + ";" + data_all.mats[i].Percents + " - производитель: " + data_all.mats[i].Manufacturer_ID.PlantName + " [" + data_all.mats[i].Manufacturer_ID.Index + "] (ГОСТ: " + data_all.mats[i].GOST_ID.Name + `)</option>`);
+                }
+            }
+            for (let i = 0; i < data_all.gost.length; i++) {
+                document.getElementById("Provod").insertAdjacentHTML('beforeend', `<option value="` + data_all.gost[i].id + `">ГОСТ: ` + data_all.gost[i].Name + `</option>`);
+                document.getElementById("Secure").insertAdjacentHTML('beforeend', `<option value="` + data_all.gost[i].id + `">ГОСТ: ` + data_all.gost[i].Name + `</option>`);
+            }
+            LoadCurrent();
+        });
+
+        LoadCurrent = function () {
+            let r = fetch('https://engprj.herokuapp.com/card_fe/' + THISID, {
+                method: 'GET'
+            });
+            let rr = r.then((res) => { console.log(res); return res.json(); });
+            rr.then((data) => {
+                console.log(data);
+                document.getElementById("NameL").value = data.data[0].Label;
+                document.getElementById("Desc").value = data.data[0].Desc;
+                document.getElementById("OKP").value = data.data[0].OKP;
+
+                if (data.data[0].Manufacturer_Link != null) document.getElementById("Manufact").value = data.data[0].Manufacturer_Link;
+
+                document.getElementById("Mass").value = data.data[0].mass;
+
+                document.getElementById("Prss").value = data.data[0].TechParams_Link.Pressure;
+                document.getElementById("Tmin").value = data.data[0].TechParams_Link.Tmin;
+                document.getElementById("Tnorm").value = data.data[0].TechParams_Link.Tnorm;
+                document.getElementById("Tmax").value = data.data[0].TechParams_Link.Tmax;
+
+                if (data.data[0].TechParams_Link.GermClass_Link != null) document.getElementById("Germ").value = data.data[0].TechParams_Link.GermClass_Link;
+                if (data.data[0].TechParams_Link.WorkEnv_Link != null) document.getElementById("Work").value = data.data[0].TechParams_Link.WorkEnv_Link;
+                if (data.data[0].TechParams_Link.TubeConn_Link != null) document.getElementById("Conn").value = data.data[0].TechParams_Link.TubeConn_Link;
+
+                document.getElementById("DN").value = data.data[0].Sizes_Link.DN;
+                document.getElementById("D").value = data.data[0].Sizes_Link.D;
+                document.getElementById("D1").value = data.data[0].Sizes_Link.D1;
+                document.getElementById("D2").value = data.data[0].Sizes_Link.D2;
+                document.getElementById("n").value = data.data[0].Sizes_Link.n;
+                document.getElementById("d").value = data.data[0].Sizes_Link.d;
+                document.getElementById("D0").value = data.data[0].Sizes_Link.D0;
+                document.getElementById("L").value = data.data[0].Sizes_Link.L;
+                document.getElementById("H").value = data.data[0].Sizes_Link.H;
+                document.getElementById("H1").value = data.data[0].Sizes_Link.H1;
+
+                if (data.data[0].Electronic_Link.Provod_Link != null) document.getElementById("Provod").value = data.data[0].Electronic_Link.Provod_Link;
+                if (data.data[0].Electronic_Link.SecureN_Link != null) document.getElementById("Secure").value = data.data[0].Electronic_Link.SecureN_Link;
+                document.getElementById("Power").value = data.data[0].Electronic_Link.Power;
+                document.getElementById("Frequency").value = data.data[0].Electronic_Link.Frequency;
+                document.getElementById("VoltageMIN").value = data.data[0].Electronic_Link.VoltageMIN;
+                document.getElementById("VoltageMAX").value = data.data[0].Electronic_Link.VoltageMAX;
+
+                if (data.data[0].AsmMats_Link.MM1_Korpus != null) document.getElementById("MM1").value = data.data[0].AsmMats_Link.MM1_Korpus;
+                if (data.data[0].AsmMats_Link.MM2_Kryshka != null) document.getElementById("MM2").value = data.data[0].AsmMats_Link.MM2_Kryshka;
+                if (data.data[0].AsmMats_Link.MM3_Salnik != null) document.getElementById("MM3").value = data.data[0].AsmMats_Link.MM3_Salnik;
+                if (data.data[0].AsmMats_Link.MM4_Shpindel != null) document.getElementById("MM4").value = data.data[0].AsmMats_Link.MM4_Shpindel;
+                if (data.data[0].AsmMats_Link.MM5_Zatvor != null) document.getElementById("MM5").value = data.data[0].AsmMats_Link.MM5_Zatvor;
+                if (data.data[0].AsmMats_Link.MM6_Klin != null) document.getElementById("MM6").value = data.data[0].AsmMats_Link.MM6_Klin;
+                if (data.data[0].AsmMats_Link.MM7_Nabivka != null) document.getElementById("MM7").value = data.data[0].AsmMats_Link.MM7_Nabivka;
+                if (data.data[0].AsmMats_Link.MM8_Prokladka != null) document.getElementById("MM8").value = data.data[0].AsmMats_Link.MM8_Prokladka;
+                if (data.data[0].AsmMats_Link.MM9_Flancy != null) document.getElementById("MM9").value = data.data[0].AsmMats_Link.MM9_Flancy;
+
+
+                document.getElementById("Conf").onclick = function (e) {
+
+                    let user = JSON.stringify({
+                        id: THISID,
+                        NameL: document.getElementById("NameL").value,
+                        Desc: document.getElementById("Desc").value,
+                        OKP: document.getElementById("OKP").value,
+                        Manufact: document.getElementById("Manufact").value,
+                        Mass: document.getElementById("Mass").value,
+                        Prss: document.getElementById("Prss").value,
+                        Tmin: document.getElementById("Tmin").value,
+                        Tnorm: document.getElementById("Tnorm").value,
+                        Tmax: document.getElementById("Tmax").value,
+                        Germ: document.getElementById("Germ").value,
+                        Work: document.getElementById("Work").value,
+                        Conn: document.getElementById("Conn").value,
+                        DN: document.getElementById("DN").value,
+                        D: document.getElementById("D").value,
+                        D1: document.getElementById("D1").value,
+                        D2: document.getElementById("D2").value,
+                        n: document.getElementById("n").value,
+                        d: document.getElementById("d").value,
+                        D0: document.getElementById("D0").value,
+                        L: document.getElementById("L").value,
+                        H: document.getElementById("H").value,
+                        H1: document.getElementById("H1").value,
+                        Provod: document.getElementById("Provod").value,
+                        Secure: document.getElementById("Secure").value,
+                        Power: document.getElementById("Power").value,
+                        Frequency: document.getElementById("Frequency").value,
+                        VoltageMIN: document.getElementById("VoltageMIN").value,
+                        VoltageMAX: document.getElementById("VoltageMAX").value,
+                        MM1: document.getElementById("MM1").value,
+                        MM2: document.getElementById("MM2").value,
+                        MM3: document.getElementById("MM3").value,
+                        MM4: document.getElementById("MM4").value,
+                        MM5: document.getElementById("MM5").value,
+                        MM6: document.getElementById("MM6").value,
+                        MM7: document.getElementById("MM7").value,
+                        MM8: document.getElementById("MM8").value,
+                        MM9: document.getElementById("MM9").value
+                    });
+                    let request = new XMLHttpRequest();
+                    request.open("put", 'https://engprj.herokuapp.com/card/' + THISID, true);
+                    request.setRequestHeader("Content-Type", "application/json");
+                    request.addEventListener("load", function () {
+                        location.href = "../card/" + THISID;
+                    });
+                    request.send(user);
+                    e.preventDefault();
+                };
+                document.getElementById("Back").onclick = function () {
+                    location.href = "../card/" + THISID;
+                };
+
+            });
+        }
+    </script>
+</body>
+
+</html>

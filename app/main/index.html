@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ModelAssembler</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/main/Ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/main/Ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/main/Ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/main/Ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/main/Ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/main/Ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/main/Ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/main/Ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/main/Ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/main/Ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/main/Ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/main/Ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/main/Ico/favicon-16x16.png">
+    <link rel="manifest" href="/main/Ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/main/Ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/main/style/Styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Задвижки трубопроводной арматуры</h1>
+        <nav>
+            <a href="https://engprj.herokuapp.com/find">Поиск</a>
+            <a href="https://engprj.herokuapp.com/card/new">Добавить карточку</a>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <div class="wrap" id="CardsList">
+        </div>
+        <script>
+            let list = document.getElementById("CardsList");
+            let r = fetch('https://engprj.herokuapp.com/all');
+            let rr = r.then((res) => { console.log(res); return res.json(); });
+            rr.then((data) => {
+                console.log(data);
+                console.log(data.data.length);
+                for (let i = 0; i < data.data.length; i++)
+                    list.insertAdjacentHTML('beforeend',
+                        `
+            <div class="card">
+                <div class="card-pic-wrap">
+                    <img src="/main/Cards/1.png" alt="A leafy plant">
+                </div>
+                <div class="card-content">
+                    <h3>` + data.data[i].Label + `</h3>
+                    <p class="truncate-text">` + data.data[i].Desc + `</p>
+                    <p><a href="https://engprj.herokuapp.com/card/` + data.data[i].id + `">Посмотреть</a></p>
+                </div>
+            </div>
+                        `
+                    );
+            });
+        </script>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="/main/main/main.js"></script>
+
+</body>
+
+</html>
